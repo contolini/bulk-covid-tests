@@ -1,0 +1,29 @@
+{
+  "name": "bulk-covid-tests",
+  "version": "1.0.0",
+  "description": "Bulk order free covid tests from covidtests.gov with addresses from a spreadsheet",
+  "main": "index.js",
+  "bin": {
+    "bulk-covid-tests": "./cli.js"
+  },
+  "scripts": {
+    "start": "node cli.js",
+    "test": "PWDEBUG=1 node cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contolini/bulk-covid-tests.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/contolini/bulk-covid-tests/issues"
+  },
+  "homepage": "https://github.com/contolini/bulk-covid-tests#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "fast-csv": "^4.3.6",
+    "playwright": "^1.17.2",
+    "random-useragent": "^0.5.0"
+  }
+}

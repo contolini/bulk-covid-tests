@@ -1,0 +1,4 @@
+﻿first_name,last_name,email,first_name_shipping,last_name_shipping,street_address,city,state,zip_code
+jane,doe,foo@example.com,,,1234 Main St,Sometown,NY,12345
+Joe,Biden,,,,1600 Pennsylvania Ave NW,Washington,DC,20500
+Homer,Simpson,blah@example.com,,,900 Court St NE,Salem,OR,97301

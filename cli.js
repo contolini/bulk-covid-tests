@@ -80,7 +80,12 @@ async function orderTest(address) {
     { quiet: true }
   );
   const context = await browser.newContext({
-    userAgent: randomUseragent.getRandom()
+    userAgent: randomUseragent.getRandom((ua) => {
+      return [
+        '/Browsers - Mac',
+        '/Browsers - Windows'
+      ].indexOf(ua.folder) === 0
+    })
   });
   const page = await browser.newPage();
   await page.goto('https://special.usps.com/testkits');
